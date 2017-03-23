@@ -1,0 +1,28 @@
+{
+	"type": "pie",
+	"data": {
+		"labels": ["Residential", "Residential Other", "Commercial", "Commercial Other"],
+		"datasets": [
+			{
+				"label": "2016",
+				"backgroundColor": ["rgba(120, 204, 210, .4)", "rgba(255, 111, 89, .4)", "rgba(4, 65, 105, .4)", "rgba(155, 213, 67, .4)"],
+				"borderColor": "rgba(255, 111, 89, 1)",
+				"borderWidth": 1,
+				"data": [1,1,1,1]
+			},
+			{
+				"label": "2015",
+				"backgroundColor": ["rgba(120, 204, 210, .4)", "rgba(255, 111, 89, .4)", "rgba(4, 65, 105, .4)", "rgba(155, 213, 67, .4)"],
+				"borderColor": "rgba(255, 111, 89, 1)",
+				"borderWidth": 1,
+				"data": [1521779866, 165127294, 309082365, 289804481]
+			}
+		]
+	},
+	"options": {
+		"title": {
+			"text": "Permit Values",
+			"display": true
+		}
+	}
+}

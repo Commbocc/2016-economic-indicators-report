@@ -1,0 +1,65 @@
+---
+layout: page
+---
+
+<style media="screen">
+.alert-info {
+	background: rgba(120, 204, 210, 0.3);
+}
+.alert-warning {
+	background: rgba(255, 111, 89, 0.5);
+}
+.alert-primary {
+	background: rgba(4, 65, 105, 0.5);
+}
+</style>
+
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+		<div class="well well-sm">
+			<canvas id="unemploymnet" class="hidden-print" width="16" height="9"></canvas>
+		</div>
+	</div>
+</div>
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<div class="row">
+	<div class="col-sm-6">
+		<div class="well well-sm">
+			<canvas id="permits_issued" width="16" height="9"></canvas>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="well well-sm">
+			<canvas id="permit_values" width="16" height="9"></canvas>
+		</div>
+	</div>
+</div>
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<!--  -->
+<script type="text/javascript">
+
+var chart = new Chart($("#unemploymnet"), {{ site.data.unemploymnet | jsonify }});
+chart.options.tooltips.callbacks.label = function(label, data){
+	return data.datasets[label.datasetIndex].label + ": " + label.yLabel + "%";
+}
+chart.options.animation.onComplete = function() {
+	var img = this.toBase64Image();
+	$("#unemploymnet").parent().append('<img src="'+img+'" class="img-responsive visible-print-block">');
+}
+
+var chart = new Chart(document.getElementById("permits_issued"), {{ site.data.permits_issued | jsonify }});
+
+var chart = new Chart(document.getElementById("permit_values"), {{ site.data.permit_values | jsonify }});
+chart.options.tooltips.callbacks.label = function(label, data){
+	return data.labels[label.index] + ": $" + data.datasets[label.datasetIndex].data[label.index].toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+}
+
+</script>
