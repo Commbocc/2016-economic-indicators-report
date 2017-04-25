@@ -1,0 +1,22 @@
+<div class="table-responsive">
+
+	<table class="table table-striped table-condensed table-bordered">
+		<thead>
+			<tr>
+				{% for cell in include.data.head %}
+				<th>{{ cell }}</th>
+				{% endfor %}
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in include.data.body %}
+			<tr>
+				{% for cell in row %}
+				<td>{{ cell }}</td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+</div>

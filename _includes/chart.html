@@ -1,0 +1,13 @@
+<canvas id="{{ include.data.options.title.text | slugify }}" class="hidden-print" width="16" height="9"></canvas>
+
+<script type="text/javascript">
+var chart_func = function() {
+
+	chart = new Chart($("#{{ include.data.options.title.text | slugify }}"), {{ include.data | jsonify }});
+	// chart.options.tooltips.callbacks.label = function(label, data){
+	// 	return data.datasets[label.datasetIndex].label + ": " + label.yLabel + "%";
+	// }
+
+}
+window.addEventListener("load", chart_func, false);
+</script>

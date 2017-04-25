@@ -1,0 +1,31 @@
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+	<li role="presentation" class="active">
+		<a href="#economic-environment" aria-controls="economic-environment" role="tab" data-toggle="tab">
+			Economic Environment
+		</a>
+	</li>
+	<li role="presentation">
+		<a href="#workforce-development" aria-controls="workforce-development" role="tab" data-toggle="tab">
+			Workforce Development
+		</a>
+	</li>
+	<li role="presentation">
+		<a href="#community-characteristics" aria-controls="community-characteristics" role="tab" data-toggle="tab">
+			Community Characteristics
+		</a>
+	</li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="economic-environment">
+		{% include economic-environment.html %}
+	</div>
+	<div role="tabpanel" class="tab-pane" id="workforce-development">
+		{% include workforce-development.html %}
+	</div>
+	<div role="tabpanel" class="tab-pane" id="community-characteristics">
+		{% include community-characteristics.html %}
+	</div>
+</div>

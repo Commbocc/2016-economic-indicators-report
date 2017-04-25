@@ -1,0 +1,54 @@
+<h1 class="text-center">Community Characteristics</h1>
+
+<h2 class="text-center">Population Growth and Projected Growth</h2>
+
+{% include tables/pop-growth.html %}
+
+<small class="text-muted">
+	<p>
+		The Tampa-St. Petersburg-Clearwater Metropolitan Statistical Area (MSA) is comprised of Hernando, Hillsborough, Pasco, and Pinellas counties<br>
+		Source: ESRI Business Analyst Online
+	</p>
+</small>
+
+<h2 class="text-center">Population by Age</h2>
+
+<div class="row">
+	<div class="col-md-6">
+		{% include tables/pop-age.html %}
+	</div>
+	<div class="col-md-6">
+		<p>
+			<img src="{{ '/assets/images/pop-by-age.png' | absolute_url }}" alt="Population by Age" class="img-responsive center-block">
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<p>
+			<img src="{{ '/assets/images/infographic-household-income.png' | absolute_url }}" alt="Household Income Infographic" class="img-responsive center-block">
+		</p>
+	</div>
+</div>
+
+<h2 class="text-center">Population by Race</h2>
+
+<div class="row">
+	<div class="col-md-6">
+		{% include tables/pop-race.html %}
+	</div>
+	<div class="col-md-6">
+		<p>
+			<img src="{{ '/assets/images/pop-by-race.png' | absolute_url }}" alt="Population by Race" class="img-responsive center-block">
+		</p>
+	</div>
+</div>
+
+<h2 class="text-center">Household Income</h2>
+
+{% include tables/household-income.html %}
+
+<p>
+	<img src="{{ '/assets/images/households-by-income.png' | absolute_url }}" alt="Number of Households by Household Income" class="img-responsive center-block">
+</p>

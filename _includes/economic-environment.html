@@ -1,0 +1,206 @@
+<h1 class="text-center">Economic Environment</h1>
+
+<!-- Labor Force -->
+<h2 class="text-center">Labor Force</h2>
+
+<small>
+	{% include tables/labor-force.html %}
+</small>
+
+<!-- Unemployment Rates -->
+<h2 class="text-center">Unemployment Rates</h2>
+
+<p>
+	<img src="{{ '/assets/images/unemployment-rates.jpg' | absolute_url }}" alt="Unemployment Rates" class="img-responsive center-block">
+</p>
+
+<!-- Permit Activity -->
+<h2 class="text-center">Permit Activity</h2>
+
+<p>
+	<img src="{{ '/assets/images/permits-issued.png' | absolute_url }}" alt="Permits Issued" class="img-responsive center-block">
+</p>
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<p>
+			<img src="{{ '/assets/images/permits-values.png' | absolute_url }}" alt="Permit Values" class="img-responsive center-block">
+		</p>
+
+	</div>
+</div>
+
+<div class="alert alert-danger">
+	<ul>
+		<li>
+			Residen al permits consist of new residen al buildings.
+		</li>
+		<li>
+			Residen al Other includes permits for door and window replacements, aluminum screens, pools, and a variety of other general building changes for residen al proper es.
+		</li>
+		<li>
+			Commercial permits include new commercial buildings, mul -family buildings, shell buildings, and interior  nishes.
+		</li>
+		<li>
+			Commercial Other includes the remainder of permits for changes and addi ons to commercial buildings, including interior remodels and sign permits.
+		</li>
+	</ul>
+</div>
+
+<!-- Housing Activity -->
+<h2 class="text-center">Housing Activity</h2>
+
+<div class="row">
+	<div class="col-md-6">
+		Single Family Houses
+		<small>
+			{% include tables/housing-single-family.html %}
+		</small>
+	</div>
+	<div class="col-md-6">
+		Townhouses and Condos
+		<small>
+			{% include tables/housing-town-condos.html %}
+		</small>
+	</div>
+</div>
+
+<small class="text-muted">
+	<p>
+		Source: Greater Tampa Associa on of Realtors; data for Hillsborough County only
+	</p>
+</small>
+
+<h2 class="">Tourist Development Taxes</h2>
+
+<div class="row">
+	<div class="col-md-6">
+		<small>
+			{% include tables/tourist-taxes.html %}
+		</small>
+	</div>
+	<div class="col-md-6">
+		<p>
+			<img src="{{ '/assets/images/infographic-tourist-development.png' | absolute_url }}" alt="Tourist Development Taxes Infographic" class="img-responsive center-block">
+		</p>
+	</div>
+</div>
+
+<p>
+	<img src="{{ '/assets/images/tourist-taxes.png' | absolute_url }}" alt="Tourist Development Taxes" class="img-responsive center-block">
+</p>
+
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<small>
+			{% include tables/gross-taxable-sales.html %}
+		</small>
+	</div>
+</div>
+
+<h2 class="text-center">Quarterly Census of Employment and Wages</h2>
+
+<p>
+	QCEW looks at employment, establishment, and wages for Hillsborough County at an industry level. We’ve compared industry growth in relation to the 2nd quarter of 2016 in the ‘Annual Change’ column next to each category of data. The final column shows the location quotient for each industry in Hillsborough County (see text box below table for more information on location quotients).
+</p>
+
+<small>
+	{% include tables/quarterly-census-wages.html %}
+</small>
+
+<div class="well well-sm small">
+	<p>
+		Location Quotient is the concentration of an industry in a geographic area (in this case, Hillsborough County) in relation to that industry’s concentration nationally.
+	</p>
+	<p>
+		Example: The Finance and Insurance industry is nearly twice as concentrated in Hillsborough County compared to the concentration of the industry nationally (table above) and Coastal Freight Transportation is 13 times more concentrated in Hillsborough County than in the U.S. as a whole (table below).
+	</p>
+</div>
+
+<h3>
+	Top 6-digit NAICS Industries by Location Quotient
+</h3>
+
+<div class="row">
+	<div class="col-md-6">
+		<small>
+			{% include tables/naics-quarterly.html %}
+		</small>
+	</div>
+	<div class="col-md-6">
+		<p>
+			<img src="{{ '/assets/images/infographic-construction-jobs.png' | absolute_url }}" alt="Construction Jobs Infographic" class="img-responsive center-block">
+		</p>
+	</div>
+</div>
+
+<small>
+	<p class="text-muted">
+		Source: Florida DEO/Bureau of Labor Statistics<br>
+		The North American Industry Classification System (NAICS) is the standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. business economy.
+	</p>
+</small>
+
+<h3 class="text-center">
+	Consumer Price Index
+</h3>
+
+<div class="row">
+	<div class="col-md-6">
+		<p>
+			The Consumer Price Index is a measure of the average change over time in the prices paid by urban consumers for a representative basket of goods and services. CPI is used to monitor inflation within a geography. In this index, 100 is equal to the average price levels of a 36-month period covering 1982, 1983, and 1984.
+		</p>
+	</div>
+	<div class="col-md-6">
+		<small>
+			{% include tables/consumer-price-index.html %}
+		</small>
+	</div>
+</div>
+
+<h3 class="text-center">
+	Gross Metro Product
+</h3>
+
+<p>
+	<img src="{{ '/assets/images/gross-metro-product.png' | absolute_url }}" alt="Gross Metro Product" class="img-responsive center-block">
+</p>
+
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<p>
+			<img src="{{ '/assets/images/infographic-air-travelers.png' | absolute_url }}" alt="Air Travelers Infographic" class="img-responsive center-block">
+		</p>
+	</div>
+</div>
+
+
+<h3 class="text-center">
+	Airport Activity
+</h3>
+
+<p>
+	Tampa International Airport (TIA) saw new international routes begin in 2016 to Cuba and to the Cayman Islands. Combined with traffic from the new Frankfurt flight that started at the end of 2015, TIA saw one of its best years for international travel in 2016.
+</p>
+
+<small>
+	{% include tables/airport-activity.html %}
+</small>
+
+
+<h3 class="text-center">
+	Port Activity - Port Tampa Bay Public Berths
+</h3>
+
+<small>
+	{% include tables/port-activity.html %}
+</small>
+
+
+<h3 class="text-center">
+	Port Activity - Port Tampa Bay Public Berths
+</h3>
+
+<small>
+	{% include tables/occupations.html %}
+</small>
