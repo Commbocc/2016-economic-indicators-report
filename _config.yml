@@ -17,7 +17,7 @@ title: 2016 Annual Economic Development Indicators Report
 description: ""
 
 baseurl: "/2016-economic-indicators-report" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://commbocc.github.io/2016-economic-indicators-report" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
